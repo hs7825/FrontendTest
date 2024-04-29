@@ -14,7 +14,7 @@ function App() {
   const [categories, setCategories] = useState([]); // State to store unique categories
 
   useEffect(() => {
-    fetch("http://localhost:8000/products")
+    fetch("https://backendcs-1c207c894525.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         if (data.results) {
